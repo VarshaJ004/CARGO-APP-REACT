@@ -1,6 +1,7 @@
 import './App.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
+import AddPort from './components/AddPort'
 import AddClient from './components/AddClient'
 import ViewClient from './components/ViewClient'
 
@@ -17,6 +18,11 @@ function App() {
       </Routes>
 
     </BrowserRouter>
+    <>
+     <AddPort/> 
+      <AddClient />
+      <ViewClient />
+    </>
   )
 }
 
