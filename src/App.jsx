@@ -7,6 +7,8 @@ import ViewPort from "./components/ViewPort";
 
 function App() {
   return (
+    <>
+  
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<AddClient />} />
@@ -15,6 +17,7 @@ function App() {
         <Route path="/view-port" element={<ViewPort />} />
       </Routes>
     </BrowserRouter>
+      </>
   );
 }
 
