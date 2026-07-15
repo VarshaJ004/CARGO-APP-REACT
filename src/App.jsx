@@ -5,6 +5,7 @@ import ViewClient from "./components/ViewClient";
 import AddCargo from "./components/AddCargo";
 import AddPort from "./components/AddPort";
 import ViewPort from "./components/ViewPort";
+import Home from "./components/Home";
 import ViewCargo from './components/ViewCargo'
 
 function App() {
@@ -18,7 +19,8 @@ function App() {
   
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<AddClient />} />
+        <Route path="/add-client" element={<AddClient />} />
+        <Route path="/" element={<Home />} />
         <Route path="/view-client" element={<ViewClient />} />
         <Route path="/add-cargo" element={<AddCargo />} />
         <Route path="/add-port" element={<AddPort />} />
