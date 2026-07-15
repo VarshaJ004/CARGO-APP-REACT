@@ -10,12 +10,8 @@ import ViewCargo from './components/ViewCargo'
 
 function App() {
   return (
-    <>
-      <ViewCargo />
 
-    </>
- 
-  )
+ <>
   
     <BrowserRouter>
       <Routes>
