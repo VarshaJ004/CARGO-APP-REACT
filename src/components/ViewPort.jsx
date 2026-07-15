@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import Navbar from "./Navbar";
 
 const ViewPort = () => {
   const [data, setData] = useState([]);
@@ -26,6 +27,7 @@ const ViewPort = () => {
 
   return (
     <div className="container mt-4">
+        <Navbar/>
       <h2 className="text-center mb-4">View All Ports</h2>
 
       {loading ? (
