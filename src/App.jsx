@@ -4,6 +4,8 @@ import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
 import AddPort from './components/AddPort'
+import AddClient from './components/AddClient'
+import ViewClient from './components/ViewClient'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -11,6 +13,8 @@ function App() {
   return (
     <>
      <AddPort/> 
+      <AddClient />
+      <ViewClient />
     </>
   )
 }
