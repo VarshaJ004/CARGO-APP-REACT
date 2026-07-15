@@ -19,9 +19,7 @@ function App() {
 
     </BrowserRouter>
     <>
-     <AddPort/> 
-      <AddClient />
-      <ViewClient />
+  
     </>
   )
 }
