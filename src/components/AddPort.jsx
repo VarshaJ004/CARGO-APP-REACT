@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import Navbar from "./Navbar";
 
 function AddPort() {
   const [port, setPort] = useState({
@@ -53,6 +54,7 @@ function AddPort() {
 
   return (
     <div className="container mt-4">
+        <Navbar/>
       <h2 className="text-center mb-4">Add Port</h2>
 
       <form onSubmit={handleSubmit}>
