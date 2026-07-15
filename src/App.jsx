@@ -6,10 +6,16 @@ import AddCargo from "./components/AddCargo";
 import AddPort from "./components/AddPort";
 import ViewPort from "./components/ViewPort";
 import Home from "./components/Home";
+import ViewCargo from './components/ViewCargo'
 
 function App() {
   return (
     <>
+      <ViewCargo />
+
+    </>
+ 
+  )
   
     <BrowserRouter>
       <Routes>
@@ -24,5 +30,4 @@ function App() {
       </>
   );
 }
-
 export default App;
