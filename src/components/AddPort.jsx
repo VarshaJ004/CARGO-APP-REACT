@@ -53,8 +53,10 @@ function AddPort() {
   };
 
   return (
+    <div>
+      <Navbar/>
     <div className="container mt-4">
-        <Navbar/>
+       
       <h2 className="text-center mb-4">Add Port</h2>
 
       <form onSubmit={handleSubmit}>
@@ -216,6 +218,7 @@ function AddPort() {
           </button>
         </div>
       </form>
+    </div>
     </div>
   );
 }

@@ -26,8 +26,10 @@ const ViewPort = () => {
   }, []);
 
   return (
+    <div>
+      <Navbar />
     <div className="container mt-4">
-        <Navbar/>
+       
       <h2 className="text-center mb-4">View All Ports</h2>
 
       {loading ? (
@@ -75,6 +77,7 @@ const ViewPort = () => {
           </table>
         </div>
       )}
+    </div>
     </div>
   );
 };

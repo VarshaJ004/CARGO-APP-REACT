@@ -3,11 +3,12 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
-      <div className="container-fluid">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark shadow sticky-top">
+      <div className="container">
 
-        <Link className="navbar-brand" to="/">
-          Shipping Service
+        {/* Logo */}
+        <Link className="navbar-brand fw-bold fs-4" to="/">
+          🚢 Shipping Service
         </Link>
 
         <button
@@ -15,37 +16,59 @@ const Navbar = () => {
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
         >
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <div className="navbar-nav">
+        {/* Center Navigation */}
+        <div
+          className="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul className="navbar-nav">
 
-            <Link className="nav-link" to="/">
-              Add Client
-            </Link>
+            <li className="nav-item mx-2">
+              <Link className="nav-link text-white fw-semibold" to="/">
+                Home
+              </Link>
+            </li>
 
-            <Link className="nav-link" to="/view-client">
-              View Clients
-            </Link>
+            <li className="nav-item mx-2">
+              <Link className="nav-link text-white fw-semibold" to="/add-client">
+                Add Client
+              </Link>
+            </li>
 
-             <Link className="nav-link" to="/add-cargo">
-              Add Cargo
-            </Link>
+            <li className="nav-item mx-2">
+              <Link className="nav-link text-white fw-semibold" to="/view-client">
+                View Clients
+              </Link>
+            </li>
 
-            <Link className="nav-link" to="/add-port">
-              Add Port
-            </Link>
+            <li className="nav-item mx-2">
+              <Link className="nav-link text-white fw-semibold" to="/add-cargo">
+                Add Cargo
+              </Link>
+            </li>
+            <li className="nav-item mx-2">
+              <Link className="nav-link text-white fw-semibold" to="/view-cargo">
+                View Cargo
+              </Link>
+            </li>
 
-            <Link className="nav-link" to="/view-port">
-              View Ports
-            </Link>
+            <li className="nav-item mx-2">
+              <Link className="nav-link text-white fw-semibold" to="/add-port">
+                Add Port
+              </Link>
+            </li>
 
-          </div>
+            <li className="nav-item mx-2">
+              <Link className="nav-link text-white fw-semibold" to="/view-port">
+                View Ports
+              </Link>
+            </li>
+
+          </ul>
         </div>
 
       </div>
