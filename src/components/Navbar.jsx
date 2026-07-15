@@ -33,6 +33,10 @@ const Navbar = () => {
               View Clients
             </Link>
 
+             <Link className="nav-link" to="/add-cargo">
+              Add Cargo
+            </Link>
+
             <Link className="nav-link" to="/add-port">
               Add Port
             </Link>
